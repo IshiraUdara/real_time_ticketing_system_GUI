@@ -1,0 +1,31 @@
+<div class="position-relative container">
+    <div class="page_title">
+      <h1 style="text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  ">Real-Time Ticketing System</h1>
+    </div>
+    <form class = "form">
+      <div class = "user_inputs">
+        <label class="input_field_label" for="totTickets"> Total tickets </label>
+        <input name="totTickets_name" class = "input_field" type = "text" id = "totTickets" [(ngModel)] = "totTickets_input"/>
+      </div>
+  
+      <div class = "user_inputs">
+        <label class="input_field_label" for="releaseRate"> Ticket release rate </label>
+        <input class = "input_field" type = "text" id="releaseRate">
+      </div>
+  
+      <div class = "user_inputs">
+        <label class="input_field_label" for="retrievalRate"> Customer retrieval rate </label>
+        <input class = "input_field" type = "text" id="retrievalRate">
+      </div>
+  
+      <div class = "user_inputs">
+        <label class="input_field_label" for="maxCapacity"> Max ticket capacity </label>
+        <input class = "input_field" type = "text" id="maxCapacity">
+      </div>
+      <div class = "user_inputs">
+        <button (click)="testing_get_inputs()" class="button_field" type="submit" value="Submit" style="background-color: rgb(23, 117, 23)"> Submit</button>
+        <input class="button_field" type="reset" value="Reset" style="background-color: rgb(218, 55, 55)">
+      </div>
+    </form>
+  </div>
